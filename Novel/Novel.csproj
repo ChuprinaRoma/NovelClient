@@ -57,6 +57,12 @@
     <Compile Include="Control\GameList.Designer.cs">
       <DependentUpon>GameList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control\GamePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\GamePanel.Designer.cs">
+      <DependentUpon>GamePanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control\GamersList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Control\GameList.resx">
       <DependentUpon>GameList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\GamePanel.resx">
+      <DependentUpon>GamePanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control\GamersList.resx">
       <DependentUpon>GamersList.cs</DependentUpon>
