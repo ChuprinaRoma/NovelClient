@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Novel.Logeck;
+using System.Threading;
+using Novel.Logeck.Model;
 
 namespace Novel.Control
 {
@@ -17,34 +20,19 @@ namespace Novel.Control
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            if (textBox1.Text != "" && textBox2.Text != "")
+            {
+                NovelManager.control = this;
+                Connerctor.Registration(textBox1.Text, textBox2.Text);
+            }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Registration_Load(object sender, EventArgs e)
-        {
-
+            System.Windows.Forms.Control control = this;
+            SetUI.SetRAControl(new Avtorisation(), control);
         }
     }
 }

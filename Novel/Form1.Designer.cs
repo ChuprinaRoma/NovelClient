@@ -1,4 +1,6 @@
-﻿namespace Novel
+﻿using Novel.Logeck;
+
+namespace Novel
 {
     partial class Form1
     {
@@ -18,6 +20,7 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
+            Connerctor.wsc.Close();
         }
 
         #region Код, автоматически созданный конструктором форм Windows

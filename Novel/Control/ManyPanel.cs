@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Novel.Logeck.Model;
 
 namespace Novel.Control
 {
@@ -19,22 +20,7 @@ namespace Novel.Control
 
         private void ManyPanel_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gamersList1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roomList1_Load(object sender, EventArgs e)
-        {
-
+            label1.Text = NovelManager.login;
         }
     }
 }
