@@ -56,46 +56,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Control\Avtorisation.cs">
+    <Compile Include="Controls\Avtorisation.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\Avtorisation.Designer.cs">
+    <Compile Include="Controls\Avtorisation.Designer.cs">
       <DependentUpon>Avtorisation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control\GameList.cs">
+    <Compile Include="Controls\ContextMenue.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\GameList.Designer.cs">
+    <Compile Include="Controls\ContextMenue.Designer.cs">
+      <DependentUpon>ContextMenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GameList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GameList.Designer.cs">
       <DependentUpon>GameList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control\GamePanel.cs">
+    <Compile Include="Controls\GamePanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\GamePanel.Designer.cs">
+    <Compile Include="Controls\GamePanel.Designer.cs">
       <DependentUpon>GamePanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control\GamersList.cs">
+    <Compile Include="Controls\GamersList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\GamersList.Designer.cs">
+    <Compile Include="Controls\GamersList.Designer.cs">
       <DependentUpon>GamersList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control\ManyPanel.cs">
+    <Compile Include="Controls\ManyPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\ManyPanel.Designer.cs">
+    <Compile Include="Controls\ManyPanel.Designer.cs">
       <DependentUpon>ManyPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control\Registration.cs">
+    <Compile Include="Controls\Registration.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\Registration.Designer.cs">
+    <Compile Include="Controls\Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Control\RoomList.cs">
+    <Compile Include="Controls\RoomList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Control\RoomList.Designer.cs">
+    <Compile Include="Controls\RoomList.Designer.cs">
       <DependentUpon>RoomList.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -105,33 +111,57 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Logeck\Connerctor.cs" />
+    <Compile Include="Logeck\Event.cs" />
+    <Compile Include="Logeck\Game\AnyListUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Logeck\Game\AnyListUser.Designer.cs">
+      <DependentUpon>AnyListUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logeck\Game\GameConnector.cs" />
+    <Compile Include="Logeck\Game\SwitchControlGame.cs" />
+    <Compile Include="Logeck\Game\Tic_tac_toe\Tic_tac_toeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Logeck\Game\Tic_tac_toe\Tic_tac_toeControl.Designer.cs">
+      <DependentUpon>Tic_tac_toeControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Logeck\Model\NovelManager.cs" />
     <Compile Include="Logeck\SetUI.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Control\Avtorisation.resx">
+    <EmbeddedResource Include="Controls\Avtorisation.resx">
       <DependentUpon>Avtorisation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control\GameList.resx">
+    <EmbeddedResource Include="Controls\ContextMenue.resx">
+      <DependentUpon>ContextMenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\GameList.resx">
       <DependentUpon>GameList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control\GamePanel.resx">
+    <EmbeddedResource Include="Controls\GamePanel.resx">
       <DependentUpon>GamePanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control\GamersList.resx">
+    <EmbeddedResource Include="Controls\GamersList.resx">
       <DependentUpon>GamersList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control\ManyPanel.resx">
+    <EmbeddedResource Include="Controls\ManyPanel.resx">
       <DependentUpon>ManyPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control\Registration.resx">
+    <EmbeddedResource Include="Controls\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Control\RoomList.resx">
+    <EmbeddedResource Include="Controls\RoomList.resx">
       <DependentUpon>RoomList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logeck\Game\AnyListUser.resx">
+      <DependentUpon>AnyListUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logeck\Game\Tic_tac_toe\Tic_tac_toeControl.resx">
+      <DependentUpon>Tic_tac_toeControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

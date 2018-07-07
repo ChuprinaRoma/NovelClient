@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Novel.Control
+namespace Novel.Logeck.Game
 {
-    public partial class GameList : UserControl
+    public partial class AnyListUser : UserControl
     {
-        public GameList()
+        public AnyListUser()
         {
             InitializeComponent();
         }

@@ -19,6 +19,7 @@ namespace Novel.Logeck
             wsc.OnMessage += Mesage;
             wsc.OnClose += Close;
             wsc.Connect();
+            
         }
         public static void Avtorization(string logIn, string password)
         {
@@ -39,6 +40,22 @@ namespace Novel.Logeck
             {
                 NovelManager.Registration(parser[1]);
             }
+            else if(parser[0] == "UpdateUser")
+            {
+                SetUI.AddControlGamers(parser[1], parser[2]);
+            }
+            else if(parser[0] == "RemoveUser")
+            {
+                SetUI.removeUser(parser[1]);
+            }
+            else if(parser[0] == "UpdateGame")
+            {
+                SetUI.AddControlGame(parser[1]);
+            }
+            else if(parser[0]  == "NewRoom")
+            {
+                SetUI.AddControlRoom(parser[1],parser[2], "1 из 2");
+            }
         }
 
         
@@ -46,7 +63,7 @@ namespace Novel.Logeck
 
         private static void Close(object s, CloseEventArgs e)
         {
-            
+            NovelManager.Disconnect();
         }
     }
 }

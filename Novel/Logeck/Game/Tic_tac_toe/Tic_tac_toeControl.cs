@@ -8,19 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Novel.Control
+namespace Novel.Logeck.Game.Tic_tac_toe_control
 {
-    public partial class GamePanel : UserControl
+    public partial class Tic_tac_toeControl : UserControl
     {
-        public GamePanel()
+        public Tic_tac_toeControl()
         {
             InitializeComponent();
         }
 
-        private void GamePanel_Load(object sender, EventArgs e)
+        private void Tic_tac_toeControl_Load(object sender, EventArgs e)
         {
 
-                
         }
     }
 }

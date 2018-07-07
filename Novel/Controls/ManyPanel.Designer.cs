@@ -46,7 +46,6 @@
             this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "LogIn";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -74,33 +73,30 @@
             // 
             this.roomList1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.roomList1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.roomList1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.roomList1.Location = new System.Drawing.Point(454, 50);
+            this.roomList1.Location = new System.Drawing.Point(484, 55);
             this.roomList1.Name = "roomList1";
+            this.roomList1.NameP = "RoomList";
             this.roomList1.Size = new System.Drawing.Size(228, 359);
             this.roomList1.TabIndex = 5;
-            this.roomList1.Load += new System.EventHandler(this.roomList1_Load);
             // 
             // gamersList1
             // 
             this.gamersList1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.gamersList1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.gamersList1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.gamersList1.Location = new System.Drawing.Point(227, 50);
+            this.gamersList1.Location = new System.Drawing.Point(16, 55);
             this.gamersList1.Name = "gamersList1";
+            this.gamersList1.NameP = "GamersList";
             this.gamersList1.Size = new System.Drawing.Size(228, 359);
-            this.gamersList1.TabIndex = 4;
-            this.gamersList1.Load += new System.EventHandler(this.gamersList1_Load);
+            this.gamersList1.TabIndex = 3;
             // 
             // gameList1
             // 
             this.gameList1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.gameList1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.gameList1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.gameList1.Location = new System.Drawing.Point(0, 50);
+            this.gameList1.Location = new System.Drawing.Point(250, 55);
             this.gameList1.Name = "gameList1";
             this.gameList1.Size = new System.Drawing.Size(228, 359);
-            this.gameList1.TabIndex = 3;
+            this.gameList1.TabIndex = 4;
             // 
             // ManyPanel
             // 
@@ -108,15 +104,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.roomList1);
-            this.Controls.Add(this.gamersList1);
             this.Controls.Add(this.gameList1);
+            this.Controls.Add(this.gamersList1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.MaximumSize = new System.Drawing.Size(685, 4000);
-            this.MinimumSize = new System.Drawing.Size(685, 0);
+            this.MaximumSize = new System.Drawing.Size(725, 4000);
+            this.MinimumSize = new System.Drawing.Size(725, 0);
             this.Name = "ManyPanel";
-            this.Size = new System.Drawing.Size(685, 414);
+            this.Size = new System.Drawing.Size(725, 414);
             this.Load += new System.EventHandler(this.ManyPanel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -128,8 +124,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private RoomList roomList1;
         private GamersList gamersList1;
+        private RoomList roomList1;
         private GameList gameList1;
     }
 }

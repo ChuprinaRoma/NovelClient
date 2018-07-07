@@ -38,7 +38,7 @@ namespace Novel
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(752, 416);
+            this.ClientSize = new System.Drawing.Size(677, 517);
             this.Name = "Form1";
             this.Text = "Novel";
             this.ResumeLayout(false);

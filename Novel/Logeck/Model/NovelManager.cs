@@ -24,7 +24,6 @@ namespace Novel.Logeck.Model
             {
                 MessageBox.Show("С таким Логином пользователь уже есть");
             }
-            control = null;
         }
 
         public static void Avtorization(string data)
@@ -38,7 +37,12 @@ namespace Novel.Logeck.Model
             {
                 MessageBox.Show("Такого акаунта нет, пароль или логин были не правильными");
             }
-            control = null;
+        }
+        
+        public static void Disconnect()
+        {
+            MessageBox.Show("Что то пошло не так, попробуйте зайти поже");
+            SetUI.SetRAControl(new Avtorisation(), control);
         }
     }
 }

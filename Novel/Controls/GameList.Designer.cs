@@ -52,6 +52,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Location = new System.Drawing.Point(0, 60);
             this.panel1.Name = "panel1";
+            this.panel1.Padding = new System.Windows.Forms.Padding(10);
             this.panel1.Size = new System.Drawing.Size(319, 425);
             this.panel1.TabIndex = 4;
             // 
@@ -64,6 +65,8 @@
             this.Controls.Add(this.label1);
             this.Name = "GameList";
             this.Size = new System.Drawing.Size(319, 485);
+            this.Load += new System.EventHandler(this.GameList_Load);
+            this.Click += new System.EventHandler(this.GameList_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 

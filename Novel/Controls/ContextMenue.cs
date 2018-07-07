@@ -7,20 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Novel.Logeck.Model;
 
 namespace Novel.Control
 {
-    public partial class ManyPanel : UserControl
+    public partial class ContextMenue : UserControl
     {
-        public ManyPanel()
+        public ContextMenue()
         {
             InitializeComponent();
-        }
-
-        private void ManyPanel_Load(object sender, EventArgs e)
-        {
-            label1.Text = NovelManager.login;
         }
     }
 }

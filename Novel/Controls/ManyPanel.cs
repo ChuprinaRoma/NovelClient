@@ -7,19 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Novel.Logeck.Model;
 
 namespace Novel.Control
 {
-    public partial class GamersList : UserControl
+    public partial class ManyPanel : UserControl
     {
-        public GamersList()
+        public ManyPanel()
         {
             InitializeComponent();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ManyPanel_Load(object sender, EventArgs e)
         {
-
+            label1.Text = NovelManager.login;
+            NovelManager.control = this;
         }
     }
 }
